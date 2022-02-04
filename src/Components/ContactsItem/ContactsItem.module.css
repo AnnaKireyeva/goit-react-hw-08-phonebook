@@ -1,0 +1,40 @@
+.contactsItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contactWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.contactName {
+  padding: 10px 0;
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(77, 79, 80);
+}
+
+.contactNumber {
+  padding: 10px 0;
+  font-size: 18px;
+  color: rgb(77, 79, 80);
+}
+
+.deleteBtn {
+  padding: 7px 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(77, 79, 80);
+  background-color: white;
+  box-shadow: 5px 5px 7px -5px rgb(34 60 80 / 60%);
+}
+
+.deleteBtn:hover {
+  cursor: pointer;
+  background-color: rgb(170, 210, 233);
+}
