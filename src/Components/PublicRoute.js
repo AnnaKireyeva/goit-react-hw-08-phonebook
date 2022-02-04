@@ -10,7 +10,7 @@ export default function PublickRoute({
 }) {
   const isLoggedIn = useSelector(authSelectors.getIsLoggedIn);
   const shouldRedirect = isLoggedIn && restricted;
-  console.log('shouldRedirect: ', shouldRedirect);
+
   return (
     <Route {...routeProps}>
       {shouldRedirect ? <Redirect to={redirectTo} /> : children}

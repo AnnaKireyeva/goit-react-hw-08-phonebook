@@ -7,7 +7,6 @@ export default function UserMenu() {
   const dispatch = useDispatch();
   const name = useSelector(authSelectors.getUsername);
   const avatar = defaultAvatar;
-  // const isFetching = useSelector(authSelectors.getIsFetchingCurrentUser);
 
   return (
     <div className={styles.container}>

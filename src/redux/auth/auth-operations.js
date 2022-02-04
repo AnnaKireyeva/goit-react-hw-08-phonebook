@@ -26,7 +26,6 @@ const register = createAsyncThunk('auth/register', async credentials => {
 
     return data;
   } catch (error) {
-    // Добавить обработку ошибки error.message
     toast.error('This user is already registered');
     console.log(error);
   }
@@ -43,7 +42,6 @@ const logIn = createAsyncThunk('auth/login', async credentials => {
     token.set(data.token);
     return data;
   } catch (error) {
-    // TODO: Добавить обработку ошибки error.message
     toast.error('Invalid  login or password');
     console.log(error);
   }
@@ -59,7 +57,6 @@ const logOut = createAsyncThunk('auth/logout', async () => {
     await axios.post('/users/logout');
     token.unset();
   } catch (error) {
-    // TODO: Добавить обработку ошибки error.message
     console.log(error);
   }
 });
@@ -72,34 +69,12 @@ const logOut = createAsyncThunk('auth/logout', async () => {
  * 2. Если токена нет, выходим не выполняя никаких операций
  * 3. Если токен есть, добавляет его в HTTP-заголовок и выполянем операцию
  */
-// const fetchCurrentUser = createAsyncThunk(
-//   'auth/refresh',
-//   async (_, thunkAPI) => {
-//     const state = thunkAPI.getState();
-//     const persistedToken = state.auth.token;
 
-//     if (persistedToken === null) {
-//       console.log('Токена нет, уходим из fetchCurrentUser');
-//       return thunkAPI.rejectWithValue();
-//     }
-
-//     token.set(persistedToken);
-//     try {
-//       const { data } = await axios.get('/users/current');
-//       return data;
-//     } catch (error) {
-//       // TODO: Добавить обработку ошибки error.message
-//       console.log(error);
-//     }
-//   },
-// );
 const fetchCurrentUser = createAsyncThunk(
   'auth/refresh',
   async (_, thunkAPI) => {
-    // console.log(thunkAPI.getState());
     const state = thunkAPI.getState();
     const persistedToken = state.auth.token;
-    console.log(persistedToken);
 
     if (persistedToken === null) {
       console.log('Токена нет, уходим из fetchCurrentUser');
@@ -110,7 +85,6 @@ const fetchCurrentUser = createAsyncThunk(
 
     try {
       const { data } = await axios.get('/users/current');
-      console.log(data);
       return data;
     } catch (error) {
       console.log(error);
