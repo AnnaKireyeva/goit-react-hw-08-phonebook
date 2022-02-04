@@ -2,5 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #2a363b;
+  border-bottom: 1px solid #41b3a3;
+  background-color: #85dad5;
 }

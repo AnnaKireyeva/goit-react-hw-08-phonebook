@@ -31,13 +31,14 @@
   border-radius: 4px;
   font-size: 18px;
   font-weight: 700;
-  color: rgb(77, 79, 80);
-  background-color: white;
-  box-shadow: 5px 5px 7px -5px rgba(34, 60, 80, 0.6);
+  color: white;
+  background-color: #c38d9e;
+  /* box-shadow: 5px 5px 7px -5px rgba(34, 60, 80, 0.6); */
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
 }
 
 .button:hover,
 .button:focus {
   cursor: pointer;
-  background-color: rgb(170, 210, 233);
+  background-color: #c4738c;
 }

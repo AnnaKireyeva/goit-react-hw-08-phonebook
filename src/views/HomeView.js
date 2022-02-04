@@ -7,10 +7,10 @@ const HomeView = () => (
   <div className={styles.container}>
     <h1 className={styles.title}>Your Phone Book</h1>
     <span className={styles.span}>
-      Welcome to service! To use the service Log in or Sign up please{' '}
+      Welcome to service! To use the service Log in or Sign up please!
     </span>
 
-    <FcContacts size={250} className={styles.icon} />
+    <FcContacts size={300} className={styles.icon} />
   </div>
 );
 

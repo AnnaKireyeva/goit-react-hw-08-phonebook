@@ -16,7 +16,7 @@ const ContactsItem = ({ id, name, number, onDeleteContact }) => {
         onClick={() => onDeleteContact(id)}
         className={styles.deleteBtn}
       >
-        <IoTrashOutline size={22} />
+        <IoTrashOutline size={22} className={styles.icon} />
       </button>
     </li>
   );

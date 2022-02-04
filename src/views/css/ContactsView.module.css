@@ -4,10 +4,12 @@
 
 .Title {
   font-size: 36px;
-  color: rgb(77, 79, 80);
+  font-weight: 700;
+  color: #41b3a3;
+  margin-top: 20px;
   margin-bottom: 10px;
   align-items: center;
 }
 .EmptyList {
-  color: darkorange;
+  color: #e8a87c;
 }

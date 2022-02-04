@@ -36,5 +36,6 @@
 
 .deleteBtn:hover {
   cursor: pointer;
-  background-color: rgb(170, 210, 233);
+  outline: none;
+  background-color: #d6b6c0;
 }

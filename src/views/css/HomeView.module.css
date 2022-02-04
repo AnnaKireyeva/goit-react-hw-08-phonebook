@@ -2,12 +2,22 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
-  /* color: #ff6347; */
+  margin-top: 20px;
 }
-.span,
+
 .title {
-  /* display: block;
-  margin-left: auto;
-  margin-right: auto; */
+  margin-top: 20px;
+  text-align: center;
+  color: #41b3a3;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.span {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: #c38d9e;
+  font-size: 24px;
+  font-weight: 500;
 }

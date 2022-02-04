@@ -1,11 +1,31 @@
 .container {
-  display: 'flex';
-  alignitems: 'center';
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
 }
 .avatar {
-  margin-right: 4px;
+  margin-right: 10px;
+  border-radius: 50%;
 }
 .name {
   font-weight: 700;
+  font-size: 20px;
+  color: #e27d60;
   margin-right: 12px;
+}
+.btn {
+  padding: 7px 10px;
+  border-radius: 5px;
+  background-color: #c38d9e;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  border-style: none;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 5px 5px 7px -5px rgb(34 60 80 / 60%); */
+}
+
+.btn:hover {
+  background-color: #c4768f;
 }
