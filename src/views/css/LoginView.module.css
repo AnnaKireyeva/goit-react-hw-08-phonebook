@@ -1,8 +1,9 @@
 .title {
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 20px;
   text-align: center;
   color: #e27d60;
+  text-transform: uppercase;
 }
 
 .form {

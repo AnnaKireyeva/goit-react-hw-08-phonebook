@@ -7,8 +7,8 @@ export const Loader = () => {
       <LoaderSpinner
         type="Audio"
         color="#00BFFF"
-        height={60}
-        width={60}
+        height={50}
+        width={50}
         timeout={5000}
       />
     </div>
