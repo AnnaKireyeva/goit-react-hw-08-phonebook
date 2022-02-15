@@ -55,6 +55,7 @@ const fetchCurrentUser = createAsyncThunk(
     if (persistedToken === null) {
       // console.log('Токена нет, уходим из fetchCurrentUser');
       return thunkAPI.rejectWithValue();
+      // return state;
     }
     token.set(persistedToken);
 
@@ -62,7 +63,10 @@ const fetchCurrentUser = createAsyncThunk(
       const { data } = await axios.get('/users/current');
       return data;
     } catch (error) {
-      console.log(error);
+      toast.error(
+        'Failed to automatically log in, fill the login form please!',
+      );
+      throw new Error(error);
     }
   },
 );
